@@ -1,0 +1,101 @@
+*{
+    font-family: 'Dancing Script', cursive;
+    
+}
+body{
+    background-color: aquamarine;
+}
+.main-about{
+    display:flex;
+
+}
+.main-about img {
+    width: 25%;
+    height: 25%;
+}
+.main-header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.menu{
+
+    color: rgba(0, 30, 255, 0.685);
+    background-color: rgba(0, 128, 0, 0.666);
+    display: flex;
+    text-transform: uppercase;
+    padding: 20px;
+    width: 100%;
+    text-align: justify;
+    justify-content: right;
+    margin-right: 20px ;
+    letter-spacing: 5px;
+    text-decoration: none;
+    
+   
+    
+
+}
+
+li a {
+    display: flex;
+    justify-content: flex-end;
+    
+    margin-right: 20px;
+    color: rgba(0, 30, 255, 0.716);
+    text-decoration: none;
+    cursor: pointer;
+    
+
+
+    
+
+    
+}
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.conteiner{
+    display: flex;
+    display: block;
+}
+.conteiner img {
+    position: relative;
+    display: inline-block;
+    width: 33.33%;
+    height: 30%;
+
+}
+.conteiner img p{
+    position:absolute;
+}
+ 
+   
+
+
+.form-main{
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+
+    padding: 80px;
+
+ 
+}
+input{
+    width: 50%;
+    height: 50%;
+}
+textarea{
+    width: 50%;
+    height: 50%;
+}
+button{
+ width: 50%;
+ height: 50%;
+}
+
