@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Dancing Script', cursive;
+    
+}
+body{
+    background-color: rgba(213, 168, 219, 0.874);
+}
+header{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('../images/background.jpg');
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+ul li {
+    display: inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid white; 
+    transition: 0.6s;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.title{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    padding: 10px;
+    color: white;
+    font-size: 100px;
+}
+
+.button{
+    
+    position: absolute;
+    padding: 30px;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.btn{    
+    font-size: 5vh;
+    border: 1px solid;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+#about{
+    position: relative;
+    margin-bottom: 50px;
+}
+#about h2{
+    position: absolute;
+    top:60px;
+    font-size: 30px;
+    left: 50%;
+}
+.main-about{
+    display: flex;
+}
+.main-about img{
+    position: absolute;
+    right: 0;
+   
+    top: 100px;
+    padding: 30px;
+    width: 30%;
+    height: 250px;
+}
+.main-about p{
+    width: 60%;
+    flex-wrap:wrap-reverse;
+    margin: 30px;
+    padding: 10px;
+    margin-top: 100px;
+    text-align:left;
+    justify-content:left;
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.animated::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+.animated:hover:after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    display: block;
+
+}
+
+#portfolio h2{
+    font-size: 30px;
+}
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-bottom: 60px;
+    width: 100%;
+  
+}
+.conteiner .packs {
+    position: relative;
+   
+    width: 50%;
+    height: auto;
+   
+   
+
+}
+
+.conteiner .packs img{
+    width: 100%;
+}
+#contact{
+    width: 100%;
+    height: 100%;
+   
+    
+}
+.conteiner .packs .img-caption{
+    position:absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.314);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition:opacity 0.5s;
+}
+.conteiner .packs .img-caption:hover{
+    opacity: 1;
+}
+
+.conteiner .packs .img-caption h3{
+    color: white ;
+    font-weight: 400;
+    font-size: 100px;
+    margin: 10px;
+   
+
+}
+
+
+form{
+    max-width: 550px;
+    width: 90%;
+    background-color: rgba(213, 168, 219, 0.874) ;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+input:focus , textarea:focus{
+    border-bottom: 1px solid rgb(255,0,106);
+
+} 
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(255,0,106);
+}
+.center{
+    text-align: center;
+}
+
+input[type = 'submit']{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right,rgb(255,0,106),rgb(255,67,61));
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.error{
+    color: red;
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+}
+
+#success{
+    color: green;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(to right,rgb(255,0,106),rgb(255,67,61));
+    color: white;
+}
+
+
+@media (min-width:700px)and (max-width: 940px){
+    .btn{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media(max-width:700px){
+    .conteiner .packs {
+        width: 100%;
+    }
+    .btn{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+    
